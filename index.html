@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>برنامج حفظ أسماء الله الحسنى</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>برنامج حفظ أسماء الله الحسنى</h1>
+        <input type="text" id="username" placeholder="أدخل اسمك">
+        <button onclick="startApp()">ابدأ</button>
+
+        <div id="content" class="hidden">
+            <h2 id="welcome"></h2>
+            <div id="name-display"></div>
+            <button onclick="showNextName()">التالي</button>
+            <button onclick="testUser()">اختبر نفسك</button>
+            <div id="question" class="hidden">
+                <p id="quiz"></p>
+                <input type="text" id="answer" placeholder="اكتب الإجابة">
+                <button onclick="checkAnswer()">تحقق</button>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
